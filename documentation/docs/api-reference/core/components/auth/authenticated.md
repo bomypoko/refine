@@ -5,13 +5,13 @@ title: <Authenticated>
 
 `<Authenticated>` is the component form of [`useIsAuthenticated`][use-is-authenticated].
 
-It internally uses [`useIsAuthenticated`][use-is-authenticated]'s return values (`isSuccess`, `isLoading`, and, `isError`) to provide its functionality.
+It internally uses [`useIsAuthenticated`][use-is-authenticated]'s return values (`data.authenticated`, `data.error`, and, `isLoading`) to provide its functionality.
 
 When:
 
--   `isSuccess` is `true`, it renders to children.
+-   `data.authenticated` is `true`, it renders to children.
 -   `isLoading` is `true`, it renders [`loading`](#loading) prop.
--   `isError` is `true`, it renders [`fallback`](#fallback) prop if provided. Otherwise, it redirects to `/login` page.
+-   `data.error` is `true`, it renders [`fallback`](#fallback) prop if provided. Otherwise, it redirects to `data.redirectTo` page.
 
 ## Basic Usage
 
