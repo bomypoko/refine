@@ -57,7 +57,7 @@ First, we need to override the **refine** login page. In this way, we will redir
 import { Layout, Button } from "antd";
 import { useAuth0 } from "@auth0/auth0-react";
 
-export const Login: React.FC = () => {
+const Login: React.FC = () => {
     // highlight-next-line
     const { loginWithRedirect } = useAuth0();
 

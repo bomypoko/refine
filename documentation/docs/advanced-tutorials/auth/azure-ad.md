@@ -224,7 +224,7 @@ const App: React.FC = () => {
         account,
     };
 
-    export const authProvider: AuthBindings = {
+    const authProvider: AuthBindings = {
         login: async () => {
             instance.loginRedirect(); // Pick the strategy you prefer i.e. redirect or popup
             return Promise.resolve({
