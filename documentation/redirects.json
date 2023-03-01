@@ -699,6 +699,14 @@
         {
             "from": "/docs/getting-started/overview/",
             "to": "/docs/"
+        },
+        {
+            "from": "/docs/advanced-tutorials/ssr/nextjs",
+            "to": "/docs/packages/documentation/routers/nextjs"
+        },
+        {
+            "from": "/docs/advanced-tutorials/ssr/remix",
+            "to": "/docs/packages/documentation/routers/remix"
         }
     ]
 }

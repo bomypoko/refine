@@ -630,6 +630,7 @@ module.exports = {
                     },
                     items: [
                         "packages/documentation/cli",
+                        "packages/documentation/inferencer",
                         "packages/documentation/command-palette",
                         "packages/documentation/react-table/index",
                         {
@@ -641,7 +642,15 @@ module.exports = {
                                 "packages/documentation/react-hook-form/useStepsForm",
                             ],
                         },
-                        "packages/documentation/inferencer",
+                        {
+                            type: "category",
+                            label: "Routers",
+                            items: [
+                                "packages/documentation/routers/react-router-v6",
+                                "packages/documentation/routers/nextjs",
+                                "packages/documentation/routers/remix",
+                            ],
+                        },
                     ],
                 },
             ],
