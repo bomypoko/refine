@@ -53,7 +53,7 @@ An `authProvider` includes the following methods:
 ```tsx
 import { AuthBindings } from "@pankod/refine-core";
 
-const authProvider: AuthBindings = {
+export const authProvider: AuthBindings = {
     // required methods
     login: (params: any) => Promise.resolve(),
     check: (params: any) => Promise.resolve(),

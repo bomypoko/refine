@@ -159,7 +159,7 @@ import { AuthBindings } from "@pankod/refine-core";
 
 import { supabaseClient } from "utility";
 
-const authProvider: AuthBindings = {
+export const authProvider: AuthBindings = {
     login: async ({ email, password, providerName }) => {
         // sign in with oauth
         if (providerName) {

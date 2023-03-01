@@ -213,7 +213,7 @@ After form submission, the [`login`][login] method of the [`authProvider`][auth-
 ```tsx title="src/authProvider.ts"
 import { AuthBindings } from "@pankod/refine-core";
 
-const authProvider: AuthBindings = {
+export const authProvider: AuthBindings = {
     // --
     login: async ({ email, password, remember, providerName }) => {
         // You can handle the login process according to your needs.

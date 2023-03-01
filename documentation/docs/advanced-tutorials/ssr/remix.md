@@ -758,7 +758,6 @@ const mockUsers = [
 const COOKIE_NAME = "user";
 
 export const authProvider: AuthBindings = {
- export const authProvider: AuthBindings = {
     login: ({ email }) => {
         // Suppose we actually send a request to the back end here.
         const user = mockUsers.find((item) => item.email === email);

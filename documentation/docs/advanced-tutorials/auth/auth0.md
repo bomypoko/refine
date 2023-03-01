@@ -133,7 +133,7 @@ const App = () => {
         return <span>loading...</span>;
     }
 
-    const authProvider: AuthBindings = {
+    export const authProvider: AuthBindings = {
         login: () => {
             return Promise.resolve({
                 success: true,

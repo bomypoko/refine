@@ -60,7 +60,7 @@ import { AuthBindings } from "@pankod/refine-core";
 
 import { account } from "./appwriteClient";
 
-const authProvider: AuthBindings = {
+export const authProvider: AuthBindings = {
     login: async ({ email, password }) => {
         try {
             await account.createEmailSession(email, password);

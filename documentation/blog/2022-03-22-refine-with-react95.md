@@ -95,10 +95,10 @@ import { AuthBindings } from "@pankod/refine-core";
 
 import { supabaseClient } from "utility";
 
-const authProvider: AuthBindings = {
-    login: async ({ email, password }) => {
+export const authProvider: AuthBindings = {
+    login: async ({ username, password }) => {
         const { data, error } = await supabaseClient.auth.signInWithPassword({
-            email,
+            email: username,
             password,
         });
 
@@ -133,7 +133,7 @@ const authProvider: AuthBindings = {
 
         return Promise.resolve({
             success: true,
-            redirectTo: "/",
+            redirectTo: "/login",
         });
     },
     onError: () => Promise.resolve({}),
@@ -145,6 +145,7 @@ const authProvider: AuthBindings = {
             return Promise.resolve({
                 authenticated: false,
                 error: error || new Error("Session not found"),
+                logout: true,
             });
         }
 

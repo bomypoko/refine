@@ -46,7 +46,7 @@ const API_URL = "YOUR_API_URL";
 const TOKEN_KEY = "strapi-jwt-token";
 const strapiAuthHelper = AuthHelper(API_URL + "/api");
 
-const authProvider: AuthBindings = {
+export const authProvider: AuthBindings = {
     login: async ({ username, password }) => {
         const { data, status } = await strapiAuthHelper.login(
             username,
